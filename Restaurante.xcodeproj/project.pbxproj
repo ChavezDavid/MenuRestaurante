@@ -14,6 +14,11 @@
 		3DA7D8EA21644122001D638D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7D8E821644122001D638D /* LaunchScreen.storyboard */; };
 		3DA7D8F521644122001D638D /* RestauranteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7D8F421644122001D638D /* RestauranteTests.swift */; };
 		3DA7D90021644123001D638D /* RestauranteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7D8FF21644123001D638D /* RestauranteUITests.swift */; };
+		3DA7D90E21644291001D638D /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7D90D21644291001D638D /* Comentario.swift */; };
+		3DA7D910216442A0001D638D /* Platillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7D90F216442A0001D638D /* Platillo.swift */; };
+		3DA7D91221644581001D638D /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7D91121644581001D638D /* Datos.swift */; };
+		3DA7D91421644F69001D638D /* CeldaPlatillo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7D91321644F69001D638D /* CeldaPlatillo.swift */; };
+		3DA7D916216454FC001D638D /* DetallePlatilloController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7D915216454FC001D638D /* DetallePlatilloController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		3DA7D8FB21644123001D638D /* RestauranteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestauranteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA7D8FF21644123001D638D /* RestauranteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteUITests.swift; sourceTree = "<group>"; };
 		3DA7D90121644123001D638D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA7D90D21644291001D638D /* Comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
+		3DA7D90F216442A0001D638D /* Platillo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platillo.swift; sourceTree = "<group>"; };
+		3DA7D91121644581001D638D /* Datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
+		3DA7D91321644F69001D638D /* CeldaPlatillo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPlatillo.swift; sourceTree = "<group>"; };
+		3DA7D915216454FC001D638D /* DetallePlatilloController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePlatilloController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,15 @@
 			children = (
 				3DA7D8DF21644121001D638D /* AppDelegate.swift */,
 				3DA7D8E121644121001D638D /* ViewController.swift */,
+				3DA7D91321644F69001D638D /* CeldaPlatillo.swift */,
+				3DA7D915216454FC001D638D /* DetallePlatilloController.swift */,
 				3DA7D8E321644121001D638D /* Main.storyboard */,
 				3DA7D8E621644122001D638D /* Assets.xcassets */,
 				3DA7D8E821644122001D638D /* LaunchScreen.storyboard */,
 				3DA7D8EB21644122001D638D /* Info.plist */,
+				3DA7D90F216442A0001D638D /* Platillo.swift */,
+				3DA7D90D21644291001D638D /* Comentario.swift */,
+				3DA7D91121644581001D638D /* Datos.swift */,
 			);
 			path = Restaurante;
 			sourceTree = "<group>";
@@ -256,7 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA7D91421644F69001D638D /* CeldaPlatillo.swift in Sources */,
+				3DA7D91221644581001D638D /* Datos.swift in Sources */,
+				3DA7D90E21644291001D638D /* Comentario.swift in Sources */,
 				3DA7D8E221644121001D638D /* ViewController.swift in Sources */,
+				3DA7D916216454FC001D638D /* DetallePlatilloController.swift in Sources */,
+				3DA7D910216442A0001D638D /* Platillo.swift in Sources */,
 				3DA7D8E021644121001D638D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
