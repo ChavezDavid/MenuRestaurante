@@ -18,6 +18,24 @@ class DetallePlatilloController : UIViewController{
     @IBOutlet weak var lblComentario: UILabel!
     
     override func viewDidLoad(){
-        imgPlatillo.image = UIImage(named: "hotdogDetalle")
+        imgPlatillo.image = platillo?.imagenDetalle
+        lblPlatillo.text = platillo?.descripcion
+        self.title = platillo?.nombre
+        
+        if (platillo?.comentarios.count)! > 0 {
+            let ultimoComentario=platillo?.comentarios[(platillo?.comentarios.count)! - 1]
+            lblUsuario.text = ultimoComentario?.usuario
+            lblComentario.text = ultimoComentario?.comentario
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToListaComentarios"{
+            let destino = segue.destination as! ListaComentariosController
+            destino.comentarios = platillo?.comentarios
+        } else if segue.identifier == "goToAgregarComentario"{
+            let destino = segue.destination as! AgregarComentarioController
+            destino.platillo = platillo
+        }
     }
 }

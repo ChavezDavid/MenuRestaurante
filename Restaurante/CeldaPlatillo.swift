@@ -12,5 +12,4 @@ import UIKit
 class CeldaPlatillo : UITableViewCell{
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var imgLista: UIImageView!
-    
 }
